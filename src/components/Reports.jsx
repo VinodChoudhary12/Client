@@ -539,7 +539,7 @@ export function Reports() {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+              {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
                 <div className="text-center p-4 bg-blue-50 rounded-lg">
                   <div className="text-2xl font-bold text-blue-600">₹4,46,400</div>
                   <div className="text-sm text-blue-600">Total Sales</div>
@@ -556,7 +556,7 @@ export function Reports() {
                   <div className="text-2xl font-bold text-red-600">₹66,150</div>
                   <div className="text-sm text-red-600">Outstanding</div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="relative border rounded-lg overflow-hidden">
                 <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
@@ -617,7 +617,7 @@ export function Reports() {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+              {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 <div className="text-center p-4 bg-green-50 rounded-lg">
                   <div className="text-2xl font-bold text-green-600">₹2,97,000</div>
                   <div className="text-sm text-green-600">Total Credits</div>
@@ -630,7 +630,7 @@ export function Reports() {
                   <div className="text-2xl font-bold text-blue-600">₹2,17,000</div>
                   <div className="text-sm text-blue-600">Closing Balance</div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="relative border rounded-lg overflow-hidden">
                 <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
@@ -728,7 +728,7 @@ export function Reports() {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+              {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
                 <div className="text-center p-4 bg-blue-50 rounded-lg">
                   <div className="text-2xl font-bold text-blue-600">₹50,000</div>
                   <div className="text-sm text-blue-600">Opening Balance</div>
@@ -745,7 +745,7 @@ export function Reports() {
                   <div className="text-2xl font-bold text-red-600">₹1,92,500</div>
                   <div className="text-sm text-red-600">Closing Balance</div>
                 </div>
-              </div>
+              </div> */}
 
               {/* <div className="relative border rounded-lg overflow-hidden">
                 <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">

@@ -24,7 +24,7 @@ const dispatchData = [
     vehicleNo: 'MH12AB1234',
     driver: 'Rajesh Kumar',
     driverPhone: '+91 98765 43210',
-    status: 'In Transit',
+    // status: 'In Transit',
     location: 'Mumbai - Pune Highway',
     destination: 'Dewas',
     progress: 65,
@@ -38,7 +38,7 @@ const dispatchData = [
     vehicleNo: 'MP09CD5678',
     driver: 'Suresh Patel',
     driverPhone: '+91 98765 43211',
-    status: 'Delivered',
+    // status: 'Delivered',
     location: 'Jabalpur Warehouse',
     destination: 'Jabalpur',
     progress: 100,
@@ -52,7 +52,7 @@ const dispatchData = [
     vehicleNo: 'RJ14EF9012',
     driver: 'Amit Singh',
     driverPhone: '+91 98765 43212',
-    status: 'Loading',
+    // status: 'Loading',
     location: 'Central Warehouse',
     destination: 'Dewas',
     progress: 10,
@@ -66,7 +66,7 @@ const dispatchData = [
     vehicleNo: 'GJ05GH3456',
     driver: 'Vinod Joshi',
     driverPhone: '+91 98765 43213',
-    status: 'Delayed',
+    // status: 'Delayed',
     location: 'Indore Bypass',
     destination: 'Jabalpur',
     progress: 45,
@@ -119,7 +119,7 @@ export function DispatchTracking() {
   };
 
   const getCurrentStage = (progress) => {
-    if (progress >= 100) return 'Delivered';
+    if (progress >= 100) return 'Vehicle Gate Out';
     if (progress >= 75) return 'Out for Delivery';
     if (progress >= 50) return 'In Transit';
     if (progress >= 25) return 'Loading';
@@ -143,7 +143,7 @@ export function DispatchTracking() {
       </div>
 
       {/* Search and Summary */}
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+      {/* <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         <Card className="lg:col-span-4">
           <CardHeader>
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-4 sm:space-y-0">
@@ -188,7 +188,7 @@ export function DispatchTracking() {
             </div>
           </CardContent>
         </Card>
-      </div>
+      </div> */}
 
       {/* Main Tracking Interface */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -373,9 +373,9 @@ export function DispatchTracking() {
                   <TableHead>Vehicle</TableHead>
                   <TableHead>Driver</TableHead>
                   <TableHead>Destination</TableHead>
-                  {/* <TableHead>Status</TableHead>
-                  <TableHead className="text-right">Value (₹)</TableHead>
-                  <TableHead>Delivery Time</TableHead> */}
+                  {/* <TableHead>Status</TableHead> */}
+                  <TableHead className="">Value (₹)</TableHead>
+                  {/* <TableHead>Delivery Time</TableHead> */}
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -385,12 +385,12 @@ export function DispatchTracking() {
                     <TableCell>{item.vehicleNo}</TableCell>
                     <TableCell>{item.driver}</TableCell>
                     <TableCell>{item.destination}</TableCell>
-                    <TableCell>
+                    {/* <TableCell>
                       <Badge variant={getStatusColor(item.status)}>
                         {item.status}
                       </Badge>
-                    </TableCell>
-                    <TableCell className="text-right">₹{item.value.toLocaleString()}</TableCell>
+                    </TableCell> */}
+                    <TableCell className="">₹{item.value.toLocaleString()}</TableCell>
                     <TableCell>
                       {item.status === 'Delivered'
                         ? new Date(item.estimatedDelivery).toLocaleString()

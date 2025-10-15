@@ -1527,6 +1527,7 @@ export function MyOrders() {
                           size="sm"
                           onClick={() => addToCart(sku)}
                           disabled={sku.stock === 0}
+                          
                         >
                           <Plus className="w-4 h-4 mr-1" />
                           Add
